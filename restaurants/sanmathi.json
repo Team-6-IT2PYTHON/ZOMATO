@@ -1,0 +1,55 @@
+{
+    "name": "sanmathi",
+    "menu": [
+        {
+            "item": "Biryani",
+            "price": 120.0
+        },
+        {
+            "item": "Butter Chicken",
+            "price": 200.0
+        },
+        {
+            "item": "Milkshake",
+            "price": 50.0
+        }
+    ],
+    "address": "nitte",
+    "orders": [
+        {
+            "user": "aryan",
+            "items": [
+                {
+                    "item": "Biryani",
+                    "price": 120.0,
+                    "quantity": 2
+                },
+                {
+                    "item": "Milkshake",
+                    "price": 50.0,
+                    "quantity": 2
+                }
+            ]
+        },
+        {
+            "user": "",
+            "items": [
+                {
+                    "item": "Biryani",
+                    "price": 120.0,
+                    "quantity": 5
+                },
+                {
+                    "item": "Milkshake",
+                    "price": 50.0,
+                    "quantity": 5
+                },
+                {
+                    "item": "Butter Chicken",
+                    "price": 200.0,
+                    "quantity": 1
+                }
+            ]
+        }
+    ]
+}
