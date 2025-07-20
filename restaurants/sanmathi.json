@@ -31,5 +31,26 @@
         }
     ],
     "address": "Nitte",
-    "orders": []
+    "orders": [
+        {
+            "user": "deekshith",
+            "items": [
+                {
+                    "item": "Fried Rice",
+                    "price": 80.0,
+                    "quantity": 3
+                }
+            ]
+        },
+        {
+            "user": "deekshith",
+            "items": [
+                {
+                    "item": "Milkshake",
+                    "price": 50.0,
+                    "quantity": 6
+                }
+            ]
+        }
+    ]
 }

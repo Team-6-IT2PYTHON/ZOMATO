@@ -2,6 +2,8 @@ import users
 import restaurants
 import menu
 import userCart
+import feedback
+
 
 def main():
     while True:
@@ -68,6 +70,8 @@ def main():
                                 choice = input("\nEnter item number to add to cart (or 'done' to stop): ")
                                 if choice.lower() == 'done':
                                     userCart.checkoutCart(user["username"])
+                                    feedback.collectFeedback(user["username"], selectedRestaurant)
+                                    
                                     break
 
                                 item_index = int(choice) - 1
