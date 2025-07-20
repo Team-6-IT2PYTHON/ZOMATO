@@ -1,17 +1,27 @@
 [
-    {
-        "restaurantName": "Sanmathi",
-        "password": "Sanmathi",
-        "address": "Nitte"
-    },
-    {
-        "restaurantName": "Harshitha",
-        "password": "Harshitha",
-        "address": "NITTE"
-    },
-    {
-        "restaurantName": "Food Land",
-        "password": "Food Land",
-        "address": "Nitte"
-    }
+	{
+		"restaurantName": "Sanmathi",
+		"password": "Sanmathi",
+		"address": "Nitte"
+	},
+	{
+		"restaurantName": "Harshitha",
+		"password": "Harshitha",
+		"address": "NITTE"
+	},
+	{
+		"restaurantName": "Food Land",
+		"password": "Food Land",
+		"address": "Nitte"
+	},
+	{
+		"restaurantName": "Aroma",
+		"password": "Aroma",
+		"address": "Karkala"
+	},
+	{
+		"restaurantName": "Coastal Spice",
+		"password": "CoastalSpice",
+		"address": "Udupi"
+	}
 ]

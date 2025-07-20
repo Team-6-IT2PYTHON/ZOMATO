@@ -16,5 +16,9 @@ Review: good
 User: Deekshith
 Restaurant: Sanmathi
 Rating: 5.0
+----------------------------------------
+User: pranav
+Restaurant: Sanmathi
+Rating: 1.0
 Review: good
 ----------------------------------------
