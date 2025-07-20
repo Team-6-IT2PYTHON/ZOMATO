@@ -1,0 +1,19 @@
+{
+	"name": "Aroma",
+	"menu": [
+		{ "item": "Paneer Butter Masala", "price": 140.0 },
+		{ "item": "Veg Fried Rice", "price": 85.0 },
+		{ "item": "Gobi Manchurian", "price": 90.0 },
+		{ "item": "Tea", "price": 15.0 },
+		{ "item": "Fresh Lime Soda", "price": 40.0 }
+	],
+	"address": "Karkala",
+	"orders": [
+		{
+			"user": "aryan",
+			"items": [
+				{ "item": "Veg Fried Rice", "price": 85.0, "quantity": 1 }
+			]
+		}
+	]
+}
