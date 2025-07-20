@@ -1,17 +1,7 @@
 [
     {
-        "restaurantName": "harshitha",
-        "password": "harshitha",
-        "address": "nitte"
-    },
-    {
-        "restaurantName": "foodland",
-        "password": "foodland",
-        "address": "nitte"
-    },
-    {
-        "restaurantName": "sanmathi",
-        "password": "sanmathi",
-        "address": "nitte"
+        "restaurantName": "Sanmathi",
+        "password": "Sanmathi",
+        "address": "Nitte"
     }
 ]

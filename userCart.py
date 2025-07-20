@@ -133,3 +133,25 @@ def checkoutCart(username: str):
         json.dump(user_data, f, indent=4)
 
     print("✅ Payment successful. Order placed!")
+
+def searchDishAcrossRestaurants(dish_name: str):
+    folder = "restaurants"
+    results = []
+
+    for filename in os.listdir(folder):
+        if filename.endswith(".json"):
+            path = os.path.join(folder, filename)
+            with open(path, "r") as f:
+                data = json.load(f)
+                menu = data.get("menu", [])
+                
+                for item in menu:
+                    if item["item"].lower() == dish_name.lower():
+                        results.append({
+                            "restaurantName": data["name"],
+                            "address": data["address"]
+                        })
+                        break
+
+    return results
+

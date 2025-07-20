@@ -83,8 +83,16 @@ def main():
                             except ValueError:
                                 print("Invalid input.")
                                 continue
-
-
+                    
+                    elif userChoice == "2":
+                        dish = input("Enter dish to search: ").strip()
+                        found = userCart.searchDishAcrossRestaurants(dish)
+                        if found:
+                            print("\nFound in:")
+                            for i, res in enumerate(found, start=1):
+                                print(f"{i}. {res['restaurantName']} ({res['address']})")
+                        else:
+                            print("No restaurants found with that dish.")
 
         elif choice == "3":
             restaurants.register()
@@ -133,7 +141,14 @@ def main():
                     elif restaurantChoice == "4":
                         print("Exiting resturant view!")
                         break
-                    
+                        
+                    elif restaurantChoice == "2":
+                        print("Showing pending orders!")
+                        restaurants.viewPendingOrders(restaurant["restaurantName"])
+
+                    elif restaurantChoice == "3":
+                        restaurants.deleteRestaurant(restaurant["restaurantName"])
+                        break
                     else:
                         print("Invalid choice!")
         elif choice == "5":
