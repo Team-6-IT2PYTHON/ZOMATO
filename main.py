@@ -1,8 +1,4 @@
-import users
-import restaurants
-import menu
-import userCart
-import feedback
+import users, restaurants, menu, userCart, feedback, delivery
 
 
 def main():
@@ -12,7 +8,9 @@ def main():
         print("2. Login as user")
         print("3. Register as restaurant")
         print("4. Login as restaurant")
-        print("5. Exit")
+        print("5. Register as delivery partner")
+        print("6. Login as delivery partner")
+        print("7. Exit")
         choice = input("Choose an option: ")
 
         if choice == "1":
@@ -28,7 +26,7 @@ def main():
                     print("1. Search by Restaurant")
                     print("2. Search by Dish")
                     print("3. Exit")
-                    userChoice = input("Choose an options: ")
+                    userChoice = input("Choose an option: ")
 
                     if userChoice == "3":
                         print("Going back to main menu")
@@ -155,7 +153,28 @@ def main():
                         break
                     else:
                         print("Invalid choice!")
+        
         elif choice == "5":
+            delivery.register()
+        
+        elif choice == "6":
+            partner = delivery.login()
+            if partner:
+                print(f"Address on file: {partner['address']}")
+                delivery.createPartnerFile(name = partner["username"], address = partner["address"])
+                while True:
+                    print(f"\n===== Options for {partner['username']} =====")
+                    print("1. Check orders")
+                    print("2. Check earnings")
+                    print("3. Exit")
+                    partnerChoice = input("Choose an option: ")
+
+                    if partnerChoice == "3":
+                        print("Exiting delivery partner mode!")
+                        break
+
+
+        elif choice == "7":
             print("Goodbye!")
             break
         else:
