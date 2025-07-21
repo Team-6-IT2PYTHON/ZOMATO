@@ -26,31 +26,10 @@
             "price": 30.0
         },
         {
-            "item": "Sandwich",
-            "price": 50.0
+            "item": "Chicken Sandwich",
+            "price": 100.0
         }
     ],
     "address": "Nitte",
-    "orders": [
-        {
-            "user": "deekshith",
-            "items": [
-                {
-                    "item": "Fried Rice",
-                    "price": 80.0,
-                    "quantity": 3
-                }
-            ]
-        },
-        {
-            "user": "deekshith",
-            "items": [
-                {
-                    "item": "Milkshake",
-                    "price": 50.0,
-                    "quantity": 6
-                }
-            ]
-        }
-    ]
+    "orders": []
 }
