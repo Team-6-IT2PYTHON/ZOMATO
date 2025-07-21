@@ -14,5 +14,6 @@
             "price": 70.0
         }
     ],
-    "address": "Nitte"
+    "address": "Nitte",
+    "orders": []
 }

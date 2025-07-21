@@ -31,7 +31,7 @@ def main():
                     if userChoice == "3":
                         print("Going back to main menu")
                         break
-                    
+
                     elif userChoice == "1":
                         allRestaurants = userCart.displayRestaurants()
 
@@ -69,7 +69,7 @@ def main():
                                 if choice.lower() == 'done':
                                     userCart.checkoutCart(user["username"])
                                     feedback.collectFeedback(user["username"], selectedRestaurant)
-                                    
+
                                     break
 
                                 item_index = int(choice) - 1
@@ -85,7 +85,7 @@ def main():
                             except ValueError:
                                 print("Invalid input.")
                                 continue
-                    
+
                     elif userChoice == "2":
                         dish = input("Enter dish to search: ").strip()
                         found = userCart.searchDishAcrossRestaurants(dish)
@@ -123,13 +123,13 @@ def main():
 
                             if menuChoice == "1":
                                 menu.viewMenu(restaurant["restaurantName"])
-                            
+
                             elif menuChoice == "2":
                                 menu.addMenu(restaurant["restaurantName"])
-                            
+
                             elif menuChoice == "3":
                                 menu.deleteMenu(restaurant["restaurantName"])
-                            
+
                             elif menuChoice == "4":
                                 menu.updateMenu(restaurant["restaurantName"])
 
@@ -139,11 +139,11 @@ def main():
 
                             else:
                                 print("Invalid choice!")
-                    
+
                     elif restaurantChoice == "4":
                         print("Exiting resturant view!")
                         break
-                        
+
                     elif restaurantChoice == "2":
                         print("Showing pending orders!")
                         restaurants.viewPendingOrders(restaurant["restaurantName"])
@@ -153,10 +153,10 @@ def main():
                         break
                     else:
                         print("Invalid choice!")
-        
+
         elif choice == "5":
             delivery.register()
-        
+
         elif choice == "6":
             partner = delivery.login()
             if partner:
@@ -169,10 +169,20 @@ def main():
                     print("3. Exit")
                     partnerChoice = input("Choose an option: ")
 
-                    if partnerChoice == "3":
+                    if partnerChoice == "1":
+                        order_data = delivery.viewAvailableOrders()
+                        if order_data:
+                            delivery.completeDelivery(partner["username"], order_data)
+
+                    elif partnerChoice == "2":
+                        delivery.viewEarnings(partner["username"])
+
+                    elif partnerChoice == "3":
                         print("Exiting delivery partner mode!")
                         break
 
+                    else:
+                        print("Invalid choice!")
 
         elif choice == "7":
             print("Goodbye!")

@@ -3,5 +3,15 @@
         "username": "",
         "password": "",
         "address": ""
+    },
+    {
+        "username": "VishnuPrasad55",
+        "password": "1234",
+        "address": "Mysore"
+    },
+    {
+        "username": "vp",
+        "password": "123",
+        "address": "mys"
     }
 ]

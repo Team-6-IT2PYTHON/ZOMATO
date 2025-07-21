@@ -22,3 +22,28 @@ Restaurant: Sanmathi
 Rating: 1.0
 Review: good
 ----------------------------------------
+User: aryan
+Restaurant: Harshitha
+Rating: 4.0
+Review: good
+----------------------------------------
+User: aryan
+Restaurant: Sanmathi
+Rating: 1.0
+Review: good
+----------------------------------------
+User: aryan
+Restaurant: Food Land
+Rating: 1.0
+Review: good
+----------------------------------------
+User: aryan
+Restaurant: Sanmathi
+Rating: 4.0
+Review: good
+----------------------------------------
+User: aryan
+Restaurant: Sanmathi
+Rating: 4.0
+Review: abcdse
+----------------------------------------

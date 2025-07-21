@@ -2,6 +2,7 @@ import json
 import os
 
 RESTAURANT_FILE = "restaurants.json"
+ORDERS_FILE = "orders.json"
 
 def loadRestaurants():
     if not os.path.exists(RESTAURANT_FILE) or os.path.getsize(RESTAURANT_FILE) == 0:
@@ -15,6 +16,19 @@ def loadRestaurants():
 def saveRestaurants(restaurants):
     with open(RESTAURANT_FILE, "w") as f:
         json.dump(restaurants, f, indent=4)
+
+def loadOrders():
+    if not os.path.exists(ORDERS_FILE) or os.path.getsize(ORDERS_FILE) == 0:
+        return []
+    with open(ORDERS_FILE, "r") as f:
+        try:
+            return json.load(f)
+        except json.JSONDecodeError:
+            return []
+
+def saveOrders(orders):
+    with open(ORDERS_FILE, "w") as f:
+        json.dump(orders, f, indent=4)
 
 def register():
     restaurants = loadRestaurants()
@@ -77,16 +91,29 @@ def viewPendingOrders(restaurant_name: str):
         print("-" * 40)
 
     try:
-        choice = input("\nEnter the order number that has been delivered (or press Enter to skip): ").strip()
+        choice = input("\nEnter the order number that has been prepared (or press Enter to skip): ").strip()
         if not choice:
-            print("✅ No orders marked as delivered.")
+            print("✅ No orders marked as prepared.")
             return
 
         order_index = int(choice) - 1
         if 0 <= order_index < len(orders):
-            delivered = orders.pop(order_index)
-            print(f"✅ Order #{choice} marked as delivered and removed.")
+            prepared_order = orders.pop(order_index)
 
+            # Add restaurant info and order ID to the order
+            prepared_order["restaurant"] = restaurant_name
+            prepared_order["restaurant_address"] = data.get("address", "")
+            prepared_order["order_id"] = f"{restaurant_name}_{len(loadOrders()) + 1}"
+            prepared_order["status"] = "ready_for_delivery"
+
+            # Add to orders.json for delivery partners
+            all_orders = loadOrders()
+            all_orders.append(prepared_order)
+            saveOrders(all_orders)
+
+            print(f"✅ Order #{choice} marked as prepared and ready for delivery.")
+
+            # Update restaurant file
             data["orders"] = orders
             with open(filepath, "w") as f:
                 json.dump(data, f, indent=4)

@@ -115,7 +115,11 @@ def checkoutCart(username: str):
             subtotal = item["price"] * item["quantity"]
             total += subtotal
             print(f"- {item['item']} x {item['quantity']} = ₹{subtotal}")
-
+    if total <= 200:
+        delivery_fee = 40
+    else:
+        delivery_fee = 60
+    total += delivery_fee
     print(f"\nTotal Amount: ₹{total}")
 
     confirm = input("\nProceed to payment? (yes/no): ").strip().lower()
@@ -146,7 +150,7 @@ def searchDishAcrossRestaurants(dish_name: str):
             with open(path, "r") as f:
                 data = json.load(f)
                 menu = data.get("menu", [])
-                
+
                 for item in menu:
                     if item["item"].lower() == dish_name.lower():
                         results.append({

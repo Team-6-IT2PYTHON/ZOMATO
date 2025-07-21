@@ -14,5 +14,17 @@
             "price": 50.0
         }
     ],
-    "address": "NITTE"
+    "address": "NITTE",
+    "orders": [
+        {
+            "user": "aryan",
+            "items": [
+                {
+                    "item": "biryani",
+                    "price": 70.0,
+                    "quantity": 2
+                }
+            ]
+        }
+    ]
 }
