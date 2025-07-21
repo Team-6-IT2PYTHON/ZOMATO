@@ -3,5 +3,15 @@
         "restaurantName": "Sanmathi",
         "password": "Sanmathi",
         "address": "Nitte"
+    },
+    {
+        "restaurantName": "Harshitha",
+        "password": "Harshitha",
+        "address": "NITTE"
+    },
+    {
+        "restaurantName": "Food Land",
+        "password": "Food Land",
+        "address": "Nitte"
     }
 ]
