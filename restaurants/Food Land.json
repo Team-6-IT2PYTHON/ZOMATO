@@ -1,0 +1,18 @@
+{
+    "name": "Food Land",
+    "menu": [
+        {
+            "item": "biryani",
+            "price": 80.0
+        },
+        {
+            "item": "meals",
+            "price": 50.0
+        },
+        {
+            "item": "noodles",
+            "price": 70.0
+        }
+    ],
+    "address": "Nitte"
+}

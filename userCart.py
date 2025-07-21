@@ -73,7 +73,7 @@ def addOrderToRestaurant(restaurant: str, username: str, items: list):
     filepath = os.path.join("restaurants", f"{safe_name}.json")
 
     if not os.path.exists(filepath):
-        print(f"⚠️ Restaurant file not found: {restaurant}")
+        print(f"Restaurant file not found: {restaurant}")
         return
 
     with open(filepath, "r") as f:
@@ -106,7 +106,7 @@ def checkoutCart(username: str):
         print("🛒 Your cart is empty.")
         return
 
-    print(f"\n🧾 Cart for {username}:")
+    print(f"\n Cart for {username}:")
     total = 0
 
     for rest_name, items in cart.items():
@@ -116,11 +116,11 @@ def checkoutCart(username: str):
             total += subtotal
             print(f"- {item['item']} x {item['quantity']} = ₹{subtotal}")
 
-    print(f"\n💰 Total Amount: ₹{total}")
+    print(f"\nTotal Amount: ₹{total}")
 
     confirm = input("\nProceed to payment? (yes/no): ").strip().lower()
     if confirm != "yes":
-        print("❌ Checkout cancelled.")
+        print("Checkout cancelled.")
         return
 
     # Step 1: Add to restaurant's orders

@@ -8,3 +8,13 @@ Restaurant: Sanmathi
 Rating: 5.0
 Review: abcdefgh
 ----------------------------------------
+User: Deekshith
+Restaurant: Sanmathi
+Rating: 5.0
+Review: good
+----------------------------------------
+User: Deekshith
+Restaurant: Sanmathi
+Rating: 5.0
+Review: good
+----------------------------------------

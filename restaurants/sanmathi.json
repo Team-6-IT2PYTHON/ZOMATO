@@ -31,5 +31,26 @@
         }
     ],
     "address": "Nitte",
-    "orders": []
+    "orders": [
+        {
+            "user": "Deekshith",
+            "items": [
+                {
+                    "item": "Biryani",
+                    "price": 120.0,
+                    "quantity": 2
+                }
+            ]
+        },
+        {
+            "user": "Deekshith",
+            "items": [
+                {
+                    "item": "Biryani",
+                    "price": 120.0,
+                    "quantity": 2
+                }
+            ]
+        }
+    ]
 }

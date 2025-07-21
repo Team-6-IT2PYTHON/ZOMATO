@@ -18,4 +18,4 @@ def collectFeedback(username, restaurant_name):
     with open("reviews.txt", "a") as f:
         f.write(f"User: {username}\nRestaurant: {restaurant_name}\nRating: {rating}\nReview: {review}\n{'-'*40}\n")
 
-    print("✅ Thank you for your feedback!")
+    print(" Thank you for your feedback!")

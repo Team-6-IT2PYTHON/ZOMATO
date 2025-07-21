@@ -1,5 +1,13 @@
 {
     "name": "deekshith",
-    "cart": {},
+    "cart": {
+        "Food Land": [
+            {
+                "item": "meals",
+                "price": 50.0,
+                "quantity": 10
+            }
+        ]
+    },
     "address": "sdfghjk"
 }
