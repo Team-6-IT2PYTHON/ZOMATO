@@ -1,35 +1,56 @@
 {
-    "name": "Sanmathi",
-    "menu": [
-        {
-            "item": "Biryani",
-            "price": 120.0
-        },
-        {
-            "item": "Fried Rice",
-            "price": 80.0
-        },
-        {
-            "item": "Noodles",
-            "price": 80.0
-        },
-        {
-            "item": "Milkshake",
-            "price": 50.0
-        },
-        {
-            "item": "Rolls",
-            "price": 60.0
-        },
-        {
-            "item": "Maggi",
-            "price": 30.0
-        },
-        {
-            "item": "Chicken Sandwich",
-            "price": 100.0
-        }
-    ],
-    "address": "Nitte",
-    "orders": []
+	"name": "Sanmathi",
+	"menu": [
+		{
+			"item": "Biryani",
+			"price": 120.0
+		},
+		{
+			"item": "Fried Rice",
+			"price": 80.0
+		},
+		{
+			"item": "Noodles",
+			"price": 80.0
+		},
+		{
+			"item": "Milkshake",
+			"price": 50.0
+		},
+		{
+			"item": "Rolls",
+			"price": 60.0
+		},
+		{
+			"item": "Maggi",
+			"price": 30.0
+		},
+		{
+			"item": "Chicken Sandwich",
+			"price": 100.0
+		}
+	],
+	"address": "Nitte",
+	"orders": [
+		{
+			"user": "Deekshith",
+			"items": [
+				{
+					"item": "Biryani",
+					"price": 120.0,
+					"quantity": 2
+				}
+			]
+		},
+		{
+			"user": "Deekshith",
+			"items": [
+				{
+					"item": "Biryani",
+					"price": 120.0,
+					"quantity": 2
+				}
+			]
+		}
+	]
 }

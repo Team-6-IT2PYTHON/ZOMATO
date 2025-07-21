@@ -1,0 +1,20 @@
+{
+	"name": "Coastal Spice",
+	"menu": [
+		{ "item": "Fish Curry Rice", "price": 180.0 },
+		{ "item": "Chicken Lollipop", "price": 120.0 },
+		{ "item": "Dosa", "price": 40.0 },
+		{ "item": "Coffee", "price": 20.0 },
+		{ "item": "Water Bottle", "price": 15.0 }
+	],
+	"address": "Udupi",
+	"orders": [
+		{
+			"user": "meera",
+			"items": [
+				{ "item": "Dosa", "price": 40.0, "quantity": 2 },
+				{ "item": "Coffee", "price": 20.0, "quantity": 2 }
+			]
+		}
+	]
+}

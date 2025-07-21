@@ -1,12 +1,22 @@
 [
-    {
-        "username": "aryan",
-        "password": "aryan",
-        "address": "Nitte"
-    },
-    {
-        "username": "deekshith",
-        "password": "asdfghjk",
-        "address": "sdfghjk"
-    }
+	{
+		"username": "aryan",
+		"password": "aryan",
+		"address": "Nitte"
+	},
+	{
+		"username": "deekshith",
+		"password": "asdfghjk",
+		"address": "sdfghjk"
+	},
+	{
+		"username": "pranav",
+		"password": "prbm",
+		"address": "nitte aids"
+	},
+	{
+		"username": "Deekshith",
+		"password": "Deekshith",
+		"address": "Nitte"
+	}
 ]
